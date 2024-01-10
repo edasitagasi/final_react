@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+nav {
+  display: flex;
+  justify-content:space-between;
+  padding: 20px;
+  background-color: #FFE5E5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link {
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 900;
+  color: black;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.link:hover {
+  text-decoration: underline;
+  color: #549A1B;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bigContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.container2 {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.recipeHeading {
+  text-align: center;
+  color: #000;
+  font-family: Inter;
+  font-size: 56px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 90%;
+  letter-spacing: -2.24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipePar {
+  text-align: center;
+  color: #000;  
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90%;
+  letter-spacing: -0.96px;
+}
+
+.search {
+  border-radius: 50px;
+  border: 2px solid #E1C5C5;
+  width: 500px;
+  margin-right: 20px;
+}
+
+.btnSearch {
+  border-radius: 50px;
+  background: #549A1B;
+  border:none;
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: lowercase;
+
+}
+
+.main_container {
+  display: flex;
+  justify-content: center;
+  padding: 0px 120px;
+  gap: 56px;
+
+}
+
+.love {
+color: #000;
+font-family: 'Inter', sans-serif;
+font-size: 140px;
+text-transform: uppercase;
+font-style: normal;
+font-weight: 900;
+line-height: 90%;
+letter-spacing: -5.6px;
+}
+
+.time {
+color: #000;
+font-family: 'Inter', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 90%;
+letter-spacing: -0.96px;
+}
+
+.girl_pic {
+  height: 640px;
+  margin-top: 50px;
+}
+
+.recipe_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: gray;
+}
+
+.recipe_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 30px;
+  background-color:#FFF;
 }
