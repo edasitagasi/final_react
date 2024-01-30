@@ -1,5 +1,6 @@
 import { useEffect, useState} from 'react';
 import DisplayRecipes from './DisplayRecipes';
+import LoaderPage from '../Loader/LoaderPage';
 
 function Recipes() {
     const MY_ID = "d2d1462e";
@@ -7,7 +8,13 @@ function Recipes() {
   
     const [mySearch, setMySearch] = useState("");
     const [myRecipes, setMyRecipes] = useState([]);
-    const [wordSubmitted, setWordSubmitted] = useState("")
+    const [wordSubmitted, setWordSubmitted] = useState("smoothie")
+
+    const [stateLoader, setStateLoader] = useState(true);
+    useEffect(() => {
+        const timer = setTimeout(() => setStateLoader(false), 1000);
+        return () => clearTimeout(timer)
+    }, [])
   
     useEffect(() => {
       const getRecipe = async () => {
@@ -30,6 +37,9 @@ function Recipes() {
 
 
     return <div className='bigContainer'>
+    <div>
+        {stateLoader && <LoaderPage />}
+    </div>
 
     <div>
         <h1 className='recipeHeading'>It's time to eat tasty and healthy food!</h1>
@@ -41,10 +51,10 @@ function Recipes() {
             <input className='search' onChange={MyRecipeSearch} value={mySearch}/>
         </form>
         <button onClick={finalSearch} className='btnSearch'>
-            SEARCH
+            Search
         </button>
     </div>
-
+    <div className='container_recipe'>
     {myRecipes.map((element, index) => (
     <DisplayRecipes key={index}
     label={element.recipe.label}
@@ -52,6 +62,7 @@ function Recipes() {
     calories={element.recipe.calories}
     ingredients={element.recipe.ingredientLines} />
     ))}
+    </div>
     </div>
 }
 

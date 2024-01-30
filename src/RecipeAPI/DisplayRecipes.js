@@ -1,16 +1,20 @@
-import './App.css';
+import '../App.css';
 
 function DisplayRecipes({label, image, calories, ingredients}) {
     
     return (
-        <div className="recipe_wrap">
+        <div>
             <div className="recipe_container">
-                    <h2>{label}</h2>
-                    <p>{calories.toFixed()} calories</p>
+                <div>
+                    <h2 className='recipe_header'>{label}</h2>
+                </div>
+                <div>
+                    <p className='recipe_par'>{calories.toFixed()} calories</p>
+                </div>
                     <img src={image} alt="recipe" className="recipe_img" />
-                    <ul className="container list">
+                    <ul>
                     {ingredients.map((ingredient, index) => (
-                    <li key={index}>
+                    <li key={index} className="recipe_ingr">
                     {ingredient}
                     </li>
                     ))}

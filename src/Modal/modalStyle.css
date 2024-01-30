@@ -1,0 +1,134 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a94;
+    width: 100%;
+    height: 100%;
+}
+
+    .modal_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 540px;
+    border-radius: 30px;
+    padding: 0 50px 50px; 
+
+}
+
+.inputContent {
+    padding: 15px;
+    border-radius: 50px;
+    border: 2px solid #CCC;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 540px;
+
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.input_par {
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+.account {
+    font-size: 36px;
+    font-family: 'Inter', sans-serif;
+}
+
+.btns_modal {
+    display: flex;
+    justify-content: space-between;
+    width: 540px;
+    margin-top: 40px;
+}
+
+.login, .cancel {
+    width: 40%;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.login {
+    background: #549A1B;
+    color: white;
+}
+
+.line {
+    width: 540px;
+    height: 1.5px;
+    background-color: #CCC;
+    margin-top: 40px;
+}
+
+.signUp_container {
+    display: flex;
+    margin-top: 30px;
+}
+
+.noAccount, .signUp {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.signUp {
+    margin-left: 5px;
+    text-decoration: underline;
+    color:#549A1B;
+}
+
+@media (max-width: 375px) {
+    .modal_content {
+        width: 200px;
+    }
+
+    form {
+        width: 200px;
+    }
+
+    .line {
+        width: 200px;
+    }
+
+    .btns_modal {
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .cancel {
+        margin-top: 5px;
+    }
+
+    .signUp_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login, .cancel {
+        padding: 10px;
+    }
+}
