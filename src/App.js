@@ -31,7 +31,7 @@ function App() {
       <div className="nav2">
       <button className="btn_menu" onClick={toggleMenu}><img src={burger} alt="burger" /></button>
         <div className={`nav2_mobile ${isOpen ? "is-open" : ""}`}>
-      <Link to="/home" className="link">Home</Link>
+      <Link to="/" className="link">Home</Link>
       <Link to="/recipes" className="link">Recipes</Link>
       <Link to="/training" className="link">Training</Link>
       <Link to="/login" className="link">Sign in</Link>
@@ -40,7 +40,6 @@ function App() {
     </nav>
 
     <Routes>
-      <Route path="/home" element={<Home />}/>
       <Route path="/recipes" element={<Recipes />}/>
       <Route path="/training" element={<Training />}/>
       <Route path="/login" element={<Login />}/>
