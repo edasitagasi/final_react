@@ -1,7 +1,7 @@
-import maria from "../assets/ava03.png";
-import lilly from "../assets/ava04.png";
-import rachel from "../assets/ava02.png";
-import steve from "../assets/ava01.png";
+import maria from "../../assets/ava03.png";
+import lilly from "../../assets/ava04.png";
+import rachel from "../../assets/ava02.png";
+import steve from "../../assets/ava01.png";
 export const slideData = [
     {
         id: 1,

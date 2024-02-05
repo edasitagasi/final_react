@@ -1,5 +1,5 @@
-import image from './assets/girl.jpg';
-import './App.css';
+import image from '../assets/girl.jpg';
+import '../App.css';
 import Slides from './Slides/Slides';
 
 function Home() {

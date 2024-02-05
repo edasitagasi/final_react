@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Tabs from './Tabs/Tabs';
-import TabOne from "./Tabs/TabOne";
-import TabTwo from "./Tabs/TabTwo";
-import TabThree from "./Tabs/TabThree";
-import TabFour from "./Tabs/TabFour";
+import Tabs from './components/Tabs/Tabs';
+import TabOne from "./components/Tabs/TabOne";
+import TabTwo from "./components/Tabs/TabTwo";
+import TabThree from "./components/Tabs/TabThree";
+import TabFour from "./components/Tabs/TabFour";
 
 function Training() {
 

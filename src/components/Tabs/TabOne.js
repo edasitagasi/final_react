@@ -1,5 +1,5 @@
-import aerobic from '../assets/aerobic.jpg';
-import '../App.css';
+import aerobic from '../../assets/aerobic.jpg';
+import '../../App.css';
 
 const TabOne = () => {
     return(

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Modal from "./Modal/Modal";
 import Content from "./Modal/Content";
-import login from "./assets/login.jpg"
+import login from "../../assets/login.jpg"
 
 function Support() {
 

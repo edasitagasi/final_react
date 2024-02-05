@@ -11,17 +11,20 @@ function Recipes() {
     const [wordSubmitted, setWordSubmitted] = useState("smoothie")
 
     const [stateLoader, setStateLoader] = useState(true);
-    useEffect(() => {
-        const timer = setTimeout(() => setStateLoader(false), 1000);
-        return () => clearTimeout(timer)
-    }, [])
+
   
     useEffect(() => {
       const getRecipe = async () => {
+        try {
         const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${wordSubmitted}&app_id=${MY_ID}&app_key=${MY_KEY}`)
         const data = await response.json();
         setMyRecipes(data.hits)
+        setStateLoader(false);
+      } catch (error) {
+        console.error(error);
+        setStateLoader(false);
       }
+    };
       getRecipe()
     },[wordSubmitted])
   
@@ -32,6 +35,7 @@ function Recipes() {
     const finalSearch = (e) => {
       e.preventDefault()
       setWordSubmitted(mySearch)
+
     }
 
 

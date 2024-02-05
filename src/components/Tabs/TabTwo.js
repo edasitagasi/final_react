@@ -1,5 +1,5 @@
-import strength from '../assets/strength.jpg';
-import '../App.css';
+import strength from '../../assets/strength.jpg';
+import '../../App.css';
 
 const TabTwo = () => {
 

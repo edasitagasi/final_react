@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { slideData } from "./slideData.js";
-import '../App.css';
-import left from "../assets/left.png";
-import right from "../assets/right.png";
+import '../../App.css';
+import left from "../../assets/left.png";
+import right from "../../assets/right.png";
 
 function Slides() {
 

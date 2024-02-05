@@ -1,5 +1,5 @@
 import TabItem from "./TabItem";
-import '../App.css';
+import '../../App.css';
 
 const Tabs = ( {setActiveTab} ) => {
     return(

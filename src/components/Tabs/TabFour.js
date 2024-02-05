@@ -1,5 +1,5 @@
-import pilates from '../assets/pilates.jpg';
-import '../App.css';
+import pilates from '../../assets/pilates.jpg';
+import '../../App.css';
 
 const TabFour = () => {
     return(

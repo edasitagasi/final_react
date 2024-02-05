@@ -1,4 +1,4 @@
-import '../App.css';
+import '../../App.css';
 
 const TabItem = ( {tab, index, setActiveTab} ) => {
     return <button className="btn_tabs"

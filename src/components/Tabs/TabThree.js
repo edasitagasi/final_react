@@ -1,5 +1,5 @@
-import yoga from '../assets/yoga.jpg';
-import '../App.css';
+import yoga from '../../assets/yoga.jpg';
+import '../../App.css';
 
 const TabThree = () => {
     return(
